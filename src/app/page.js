@@ -47,11 +47,11 @@ const GeminiForm = () => {
   };
   return (
     <div>
-      <h1>Lo hizo Eduardo</h1>
+      <h1>Place your api key in the code firstly</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Pregunta cualquier cosa"
+          placeholder="Ask me anything..."
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
         />
