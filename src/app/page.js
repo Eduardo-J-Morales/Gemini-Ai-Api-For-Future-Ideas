@@ -22,7 +22,7 @@ const GeminiForm = () => {
           ],
         },
       ];
-      const genAI = new GoogleGenerativeAI("YOUR_API_KEY");
+      const genAI = new GoogleGenerativeAI("HERE_GOES_THE_API");
       const model = genAI.getGenerativeModel({
         model: 'gemini-1.5-flash',
         safetySettings: [
@@ -47,10 +47,11 @@ const GeminiForm = () => {
   };
   return (
     <div>
+      <h1>Lo hizo Eduardo</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Enter your prompt"
+          placeholder="Pregunta cualquier cosa"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
         />
